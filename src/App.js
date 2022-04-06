@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import {Greet}  from './component/Greet'; //Greet for default export to this page if we use export default we can chage here import name and called id..most of the cases we use default export.
+import {Greet}  from './component/Greet'; 
+import Welcome from './component/Welcome'
+//Greet for default export to this page if we use export default 
+//we can chage here import name and called id..most of the cases 
+//we use default export.
 
 function App() {
   return (
@@ -20,6 +24,7 @@ function App() {
         </a>
       </header> */}
       <Greet/> 
+      <Welcome/>
     </div>
   );
 }
