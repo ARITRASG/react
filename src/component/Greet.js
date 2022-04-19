@@ -1,9 +1,19 @@
 import React from 'react'
 
-//  function Greet(){
-//      return 
+//  function Greet(prop){
+
+//     const red=()=>{
+//         alert("red function called")
+//     }
+//      return <h1 onClick={red}>{prop.text}</h1>
 //  }
 
- export const Greet = ()=><h1>Hello Sengupta</h1> //ES6
+export const Greet = () =>( 
  
- //export default Greet
+    <div>
+        <h1> Functional Component Hello Sengupta </h1> 
+    </div>
+)
+ //ES6
+
+export default Greet
