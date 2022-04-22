@@ -4,8 +4,8 @@ import Greet  from './component/Greet';
 //import {Greet}  from './component/Greet'; 
 import Welcome from './component/Welcome'
 import React from 'react';
-
 import Jsx from './jsx/Jsx';
+import Profile from './profile/Profile'
 //Greet for default export to this page if we use export default 
 //we can chage here import name and called id..most of the cases 
 //we use default export.
@@ -15,17 +15,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {/*Functional component*/}
         <Greet text="Function Component"/> 
+        {/* class component */}
         <Welcome/>
-       {/* {
+        {/* JSX */}
+        <h3><u>JSX</u></h3>
+       {
          React.createElement(
            'h1',
            {className: 'head-tag'},
            'Hello JSX'
          )
-       } */}
-       <h1>JSX</h1>
+       }
        <Jsx/>
+       {/* PROP */}
+       <Profile text={{name: 'Peter'}}  data = 'Peter-data' />
+       <Profile text={{name: 'Bruce'}}  data = 'Bruce-data' />
+       <Profile text={{name: 'Alice'}}  data = 'Alice-data' />
       </header>
     </div>
   );
