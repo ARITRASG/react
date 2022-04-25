@@ -30,9 +30,13 @@ function App() {
        }
        <Jsx/>
        {/* PROP */}
-       <Profile text={{name: 'Peter'}}  data = 'Peter-data' />
-       <Profile text={{name: 'Bruce'}}  data = 'Bruce-data' />
-       <Profile text={{name: 'Alice'}}  data = 'Alice-data' />
+       <Profile name = 'Peter'  data = 'Peter-data' />
+       <p> This is children property</p>
+  
+       <Profile name = 'Bruce'  data = 'Bruce-data' />
+       <p> This is action property</p>
+       <Profile name = 'Alice'  data = 'Alice-data' />
+       <p> This is hero property</p>
       </header>
     </div>
   );
